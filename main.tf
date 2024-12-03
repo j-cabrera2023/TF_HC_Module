@@ -38,8 +38,8 @@ resource "azurerm_monitor_metric_alert" "health_check_alert" {
   enabled             = false                  # Disabled state as requested
 
   criteria {
-    metric_namespace = "microsoft.insights/components"
-    metric_name      = "availabilityResults/failed"
+    metric_namespace = "Microsoft.Web/sites"
+    metric_name      = "Http5xx"
     aggregation      = "Total"
     operator         = "GreaterThan"
     threshold        = var.alert_threshold
