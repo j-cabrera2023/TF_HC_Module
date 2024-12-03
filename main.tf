@@ -52,3 +52,5 @@ resource "azurerm_monitor_metric_alert" "health_check_alert" {
     }
   }
 }
+
+#adding this line for Github testing
